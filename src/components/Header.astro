@@ -1,0 +1,67 @@
+---
+import HeaderButton from "./HeaderButton.astro"
+
+console.log('javascript')
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+    <div class="mx-auto text-center mb-8 lg:mb-16">
+        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+            SpaceX launches 🚀
+        </h2>
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            All the information about SpaceX launches 
+        </p>
+    </div>
+
+    <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
+        <HeaderButton href="/">
+            <svg 
+            slot="before"
+            class="icon icon-tabler icon-tabler-rocket"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+                <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+                <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+              </svg>
+            Last Launches
+        </HeaderButton>
+        <HeaderButton href="/about">
+            <svg 
+            slot="before" 
+            class="icon icon-tabler icon-tabler-info-circle" 
+            width="40"
+            height="40" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="#ffffff" 
+            fill="none" 
+            stroke-linecap="round" 
+            stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                <path d="M12 9h.01" />
+                <path d="M11 12h1v4h1" />
+              </svg>
+            About the project
+        </HeaderButton>
+        <HeaderButton href="/oldest">
+            <svg slot="before" class="icon icon-tabler icon-tabler-clock-bolt" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20.984 12.53a9 9 0 1 0 -7.552 8.355" />
+                <path d="M12 7v5l3 3" />
+                <path d="M19 16l-2 3h4l-2 3" />
+              </svg>
+            The oldest
+        </HeaderButton>
+
+    </nav>
+</header>
